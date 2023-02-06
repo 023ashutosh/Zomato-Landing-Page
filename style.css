@@ -7,6 +7,7 @@ body
 {
     font-family: 'Merriweather', serif;
     background-color: #f9fafc;
+    /* cursor: pointer; */
 }
 
 .navbar
@@ -14,6 +15,7 @@ body
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: #ffffff;
 }
 
 .navbar__brand
@@ -33,6 +35,13 @@ body
     border: none;
     padding: 12px;
     border-radius: 6px;
+    font-weight: 600;
+}
+
+.nav__item:hover
+{
+    border: 2px solid #ff6767;
+    cursor: pointer;
 }
 
 @media (min-width : 768px)
@@ -41,5 +50,19 @@ body
     {
         justify-content: space-between;
         padding: 10px 30px;
+    }
+}
+
+@media (min-width : 1024px)
+{
+    .navbar__brand
+    {
+        width: 150px;
+    }
+
+    .nav__item
+    {
+        padding: 20px;
+        font-size: 20px;
     }
 }
