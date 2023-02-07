@@ -6,7 +6,7 @@
 body
 {
     font-family: 'Merriweather', serif;
-    background-color: #f9fafc;
+    background-color: #ebf2ff;
     /* cursor: pointer; */
 }
 
@@ -28,41 +28,214 @@ body
     width: 100%;
 }
 
-.nav__item
+.button__primary
 {
     background-image: linear-gradient( to right, #ff512f 0%,#dd2476 51%,#ff512f 100% );
-    color: #ffffff;
+    color: #ffffff;     
     border: none;
-    padding: 12px;
-    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
     font-weight: 600;
 }
 
-.nav__item:hover
+.button__primary:hover
 {
     border: 2px solid #ff6767;
     cursor: pointer;
 }
 
+.container
+{
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.hero__image__container
+{
+    width: 100%;
+}
+
+.hero__image
+{
+    width: 100%;
+    border-radius: 8px;
+
+}
+
+.hero__text
+{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: #1d3557;
+    font-weight: 900;
+    padding: 10px;
+}
+
+.food__card__image__container
+{
+width: 100%;
+margin: 40px;
+}
+
+.food__card
+{
+background-color: #f9f9f9;
+}
+
+.food__card__description
+{
+ padding: 15px;   
+}
+
+.food__image
+{
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.explore__menu__text
+{
+    margin: 20px 30px 20px 30px;
+    color: #1d3557;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+
 @media (min-width : 768px)
 {
+
+    .explore__menu__text
+{
+    margin: 40px;
+    color: #1d3557;
+    text-align: center;
+    font-size: 2.875rem;
+    line-height: 3.25rem;
+    font-weight: 900;
+}
+
+
+    .explore__menu__lists
+    {
+        display: flex;
+        gap: 15px;
+    }
+
+    #pizza__card
+    {
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
     .navbar
     {
         justify-content: space-between;
-        padding: 10px 30px;
+        padding: 5px 10px;
     }
+
+    .button__primary
+    {
+    margin: 10px;
+    }
+
+    .hero__container
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .explore__menu__container
+    {
+        position: relative;
+    }
+
+    .explore__menu__gradient__bg
+    {
+        position: absolute;
+        background-image: linear-gradient( to right, #ff512f 0%,#dd2476 51%,#ff512f 100% );
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: skewY( -5deg );
+    }
+    
 }
 
 @media (min-width : 1024px)
 {
+    .explore__menu__container
+    {
+        position: relative;
+    }
+
+    .explore__menu__gradient__bg
+    {
+        position: absolute;
+        background-image: linear-gradient( to right, #ff512f 0%,#dd2476 51%,#ff512f 100% );
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: skewY( -5deg );
+    }
+
+    .explore__menu__lists
+    {
+        display: flex;
+        gap: 25px;
+        margin-top: 45px;
+        padding: 0 30px;;
+    }
+
+    .explore__menu__text
+{
+    margin: 48px;
+    color: #1d3557;
+    text-align: center;
+    font-size: 2.875rem;
+    line-height: 3.25rem;
+    font-weight: 900;
+}
+
+    .container
+    {
+        max-width: 70%;
+    }
     .navbar__brand
     {
         width: 150px;
     }
 
-    .nav__item
+    .button__primary
     {
-        padding: 20px;
-        font-size: 20px;
+        padding: 15px 30px;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .hero__container
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .hero__description
+    {
+        width: 100%;
+    }
+
+    .hero__text 
+    {
+        font-size: 3rem;
+        line-height: 1;
     }
 }
